@@ -1,0 +1,372 @@
+            ul{
+                /* padding: 0; */
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Noto Sans', sans-serif;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .page-header {
+                margin-top: 10px;
+                display: flex;
+            }
+
+            .main-menu-list {
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                list-style: none;
+            }
+
+            .main-menu {
+                flex-grow: 1;
+            }
+
+            .main-menu-list-link {
+                text-decoration: none;
+                color: rgb(104, 104, 185);
+                font-size: 2em;
+            }
+
+            .logo {
+                width: 75px;
+            }
+
+            .main-site {
+                margin-bottom: 15px;
+            }
+
+            .banner {
+                max-width: 1600px;
+                height: 500px;
+                margin: 50px auto;
+                border: 1px solid #000;
+                background: url(img/innsbruck1.png);
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h1 {
+                color: white;
+                flex-basis: 1200px;
+                font-size: 3em;
+            }
+
+            h2 {
+                color: rgb(37, 37, 116);
+            }
+
+            h3 {
+                color: black;
+                font-size: 2em;
+                font-weight: 700;
+            }
+
+            .list-activities {
+                width: 50%;
+                /* height: 360px; */
+            }
+
+            .number {
+                list-style-image: url(img/unnamed3);
+            }
+
+
+            .pub {
+                background: url(img/skier.png);
+                width: 500px;
+                height: 400px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                flex-direction: column;
+                justify-content: space-between;
+                display: flex;
+            }
+
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .text-pub {
+                font-size: 2em;
+            }
+
+            .site-ski {
+                align-self: flex-end;
+                background: rgba(255, 255, 255, 0.541);
+                padding: 15px;
+                text-decoration: none;
+                color: rgb(105, 104, 104);
+                text-transform: uppercase;
+            }
+
+            .galerie-wrapper {
+                padding: 0;
+            }
+
+            .galerie {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                background: rgb(159, 236, 159);
+                margin-bottom: 15px;
+                justify-content: space-between;
+            }
+
+            .galery-text {
+                justify-content: flex-end;
+                margin: auto;
+                padding: 15px 10px;
+                width: 260px;
+                margin: 0;
+                color: white;
+                text-align: center;
+            }
+
+            .second-text {
+                order: 1;
+                justify-content: flex-start;
+            }
+
+            .galery-castles {
+                width: 75%;
+            }
+
+            .galery-castles-second {
+                display: flex;
+                justify-content: flex-end;
+                margin: auto;
+            }
+
+            .second-galery-image {
+                order: 0;
+            }
+
+            .map {
+                text-align: center;
+                max-width: 1200px;
+            }
+
+            .map-innsbruck {
+                width: 100%;
+            }
+
+            .starting {
+                text-align: center;
+                border-collapse: collapse;
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            .title {
+                background: rgb(26, 26, 102);
+                color: white;
+            }
+
+            .down {
+                background: white;
+                color: rgb(26, 26, 102);
+            }
+
+            .down span {
+                display: none;
+            }
+
+            .starting td,
+            th {
+                border: 1px solid black;
+            }
+
+            .footerinnsbruck {
+                background: rgb(159, 236, 159);
+                padding: 15px;
+            }
+
+            .vistinnsbruck {
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .footer-social-wrapper {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .social-media-wrapper {
+                padding: 10px;
+            }
+
+            .social-media {
+                padding: 5px;
+            }
+
+            @media(max-width:800px) {
+                .wrapper {
+                    flex-direction: column;
+                }
+
+                .list-activities {
+                    width: 100%;
+                }
+
+                .galerie {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .galery-wrapper {
+                    padding: 0;
+                }
+
+                .galery-castles {
+                    width: 100%;
+                }
+
+                .galery-castles-second {}
+
+                .second-galery-image {
+                    order: 1;
+                }
+
+                .map {
+                    width: auto;
+                }
+
+                .map-innsbruck {
+                    width: 100%;
+                }
+            }
+
+            @media(max-width:576px) {
+                .page-header {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .main-menu {
+                    width: 70%;
+                }
+
+                .main-menu-list {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .banner {
+                    margin: 0;
+                }
+
+                .container {}
+
+                .main-menu-list li {
+                    border-bottom: 1px solid grey;
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 5px;
+                    margin-bottom: 5px;
+                }
+
+                h1 {
+                    text-align: center;
+                }
+
+                .wrapper {
+                    flex-direction: column;
+                }
+
+                .list-activities {
+                    width: auto;
+                }
+
+                .pub {
+                    width: 100%;
+                    height: 315px;
+                    background-size: cover;
+                }
+
+                h2 {
+                    text-align: center;
+                }
+
+                .galery-description {
+                    text-align: center;
+                }
+
+                .galerie-wrapper {
+                    padding: 0;
+                }
+
+                .galerie {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .map-innsbruck {
+                    width: 100%;
+                }
+
+                .starting {
+                    width: 100%;
+                }
+
+                .title {
+                    display: none;
+                }
+
+                .down span {
+                    display: block;
+                    background: rgba(0, 38, 163, 0.336);
+                    color: dimgray;
+                    font-size: 10px;
+                    font-weight: 600;
+                    padding: 5px 0;
+                    text-transform: uppercase;
+                }
+
+                .down {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-bottom: 20px;
+                    justify-content: center;
+                }
+
+                .down td {
+                    width: 45%;
+                    padding: 0;
+                    margin: 0 -1px -1px 0;
+                }
+
+                .list-activities {
+                    vertical-align: middle;
+                    padding: 0;
+                }
+
+                .number {
+                    list-style-image: none;
+                    list-style-type: none;
+                }
+
+                .number:before {
+                    content: '';
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(img/unnamed3);
+                    background-size: contain;
+                    margin: 0 auto;
+                }
+                .footer-social-wrapper{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
